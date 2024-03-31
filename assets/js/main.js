@@ -1,3 +1,16 @@
+AOS.init();
+
+$(document).ready(function(){
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 10) {
+            $('.navbar').addClass('header-fixed');
+        }
+        else {
+            $('.navbar').removeClass('header-fixed');
+        }
+    });
+});
+
 jQuery('#FWDrop').raindrops({
     color:'#000',
     canvasHeight: 70,

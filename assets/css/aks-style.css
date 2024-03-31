@@ -13,7 +13,7 @@
 }
 .navbar.header-fixed {
 	position: fixed;
-	background: rgba(var(--white-color), 1);
+	background: rgba(var(--main-color), 1);
 	border: none;
 	animation: slideDown 0.35s ease-out;
 	backdrop-filter: blur(5px);
@@ -660,12 +660,13 @@ nav .navbar-brand img {
 	display: flex;
 	gap: 5px;
 	margin: 20px 0px;
+    border-bottom: 1px solid rgba(var(--white-color), 0.4);
+    width: 80%;
 }
 .foot-cta .form-control {
     min-height: 40px;
     border-radius: 0px;
 	border: none;
-    border-bottom: 1px solid rgba(var(--white-color), 0.4);
     padding: 5px;
     background: rgba(var(--black-color), 0);
     color: rgba(var(--white-color), 1);
@@ -674,20 +675,15 @@ nav .navbar-brand img {
 .foot-cta .form-control::placeholder {
     color: rgba(var(--white-color), 0.6);
 }
-.foot-cta .common-btn {
-    white-space: nowrap;
+.foot-cta .foot-btn {
+    border: none;
     padding: 7px 20px;
     font-size: 13px;
-    text-transform: capitalize;
-    padding-right: 36px;
-    height: 40px;
+    transition: var(--transition-05s);
+    color: rgba(var(--second-color), 1);
 }
-.foot-cta .common-btn::after {
-    width: 40px;
-    height: 40px;
-}
-.foot-cta .common-btn:hover::after, .foot-cta .common-btn:first-child:active::after, .foot-cta .common-btn:active::after, .foot-cta .common-btn:focus::after, .foot-cta :not(.btn-check)+.common-btn:active::after, .foot-cta .common-btn:focus-visible::after, .foot-cta button.common-btn:focus:not(:focus-visible)::after, .foot-cta .common-btn:first-child:hover::after {
-    width: calc(100% + 50px);
+.foot-cta .foot-btn:hover, .foot-cta .foot-btn:focus {
+    color: rgba(var(--second-color), 1);
 }
 .social-list {
     display: flex;
