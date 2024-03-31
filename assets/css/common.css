@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    -moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+*:focus, *:focus-visible {
+	outline: none;
+}
+:root {
+	--Oswald-font: 'Oswald', sans-serif;
+	--Poppins-font: 'Poppins', sans-serif;
+
+    --font-awesome-pro: 'Font Awesome 6 Pro';
+    --bootstrap-icon: 'bootstrap-icons';
+
+    --transition-05s: all ease-in-out 0.5s;
+    --transition-08s: all ease-in-out 0.8s;
+
+	--main-color: 71, 32, 183; /* rgba(71, 32, 183, 1) */
+	--second-color: 255, 192, 0; /* rgba(255, 192, 0, 1) */
+	--third-color: 4, 17, 61; /* rgba(4, 17, 61, 1) */
+	/*--fourth-color: 3, 89, 132; /* rgba(3, 89, 132, 1) */
+	--white-color: 255, 255, 255;
+	--black-color: 0, 0, 0;
+}
+input:hover, select:hover, .btn:hover, button:hover, .form-control:hover, textarea:hover, .navbar-toggler:hover, input:focus, select:focus, .btn:focus, button:focus, .form-control:focus, textarea:focus, .navbar-toggler:focus, .btn:first-child:active, .btn-close:focus, button.btn:focus:not(:focus-visible), .form-select:hover, .form-select:focus {
+	box-shadow: none;
+	outline: 0px;
+	border-color: inherit;
+}
+ol, ul, dl {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+a {
+	display: inline-block;
+}
+a, a:hover, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+img, .img-fluid {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	user-select: none;
+	pointer-events: none;
+}
+body {
+	font-family: var(--Poppins-font);
+}
+
+/* .head-pt {
+	padding-top: 100px;
+} */
+.common-section {
+	padding: 60px 0px;
+	position: relative;
+	overflow: hidden;
+}
+.common-section > *, .banner-inner-section > *, .banner-box, .footer-section > * {
+	position: relative;
+	z-index: 1;
+}
+.banner-section .row, .common-section .row, .footer-section .row, .quote-box .row {
+	gap: 24px 0px;
+}
+.common-SubTitle, .common-box > span, .common-section .common-box > span {
+	margin-bottom: 4px;
+	text-transform: capitalize;
+	position: relative;
+	color: rgba(var(--black-color), 1);
+	display: inline-block;
+    font-size: 18px;
+	font-weight: 700;
+	line-height: 1.3;
+	padding-left: 16px;
+}
+.common-SubTitle::before, .common-box > span::before, .common-section .common-box > span::before {
+	content: '';
+	--ehw-cstb: 8px;
+	width: var(--ehw-cstb);
+	height: var(--ehw-cstb);
+	position: absolute;
+	inset: 0px;
+	margin-top: 8px;
+	background: rgba(var(--main-color), 1);
+	animation: SubRotate 2s linear infinite alternate;
+}
+.common-title, .common-box > h2, .common-section .common-box > h2 {
+	font-family: var(--Oswald-font);
+    margin-bottom: 20px;
+	text-transform: capitalize;
+	position: relative;
+	color: rgba(var(--black-color), 1);
+    font-size: 46px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+.common-title span, .common-box > h2 span, .common-section .common-box > h2 span {
+	display: block;
+	color: rgba(var(--main-color), 1);
+}
+.common-para, .common-box > div.common-para {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	position: relative;
+    color: rgba(var(--black-color), 1);
+    margin: 0px 0px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.common-para p, .common-box > div p {
+	margin-bottom: 10px;
+}
+.common-para p:last-child , .common-box > div p:last-child {
+    margin-bottom: 0px;
+}
+.common-ulList, .common-para ul, .common-box > div.common-para ul {
+	margin: 20px 0px;
+}
+.common-ulList li, .common-para ul li, .common-box > div.common-para ul li {
+	padding-left: 20px;
+	position: relative;
+}
+.common-ulList::before, .common-para ul li::before, .common-box > div.common-para ul li::before {
+	--ehw-cpulib: 50px;
+	width: var(--ehw-cpulib);
+	height: var(--ehw-cpulib);
+	content: '';
+	font-family: var(--font-awesome-pro);
+	position: absolute;
+	inset: 0px;
+	margin-top: 10px;
+	color: rgba(var(--main-color), 1);
+}
+
+/* All type btn start */
+
+.common-btn {
+	--common-btn-transition: var(--transition-05s);
+	transition: var(--common-btn-transition);
+    border: 1px solid var(--border-btn);
+	background: var(--bg-btn);
+	color: var(--btn-color);
+	position: relative;
+	text-transform: capitalize;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.1;
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+.common-btn {
+	--border-btn: rgba(var(--second-color), 0);
+	--bg-btn: rgba(var(--second-color), 1);
+	--btn-color: rgba(var(--main-color), 1);
+	padding: 12px 24px;
+	padding-right: 40px;
+	height: 48px;
+	border: none;
+}
+.common-btn > * {
+	position: relative;
+	z-index: 2;
+	transition: var(--common-btn-transition);
+	color: var(--btn-color);
+}
+.common-btn:hover > *, .common-btn:first-child:active > *, .common-btn:active > *, .common-btn:focus > *, :not(.btn-check)+.common-btn:active > *, .common-btn:focus-visible > *, button.common-btn:focus:not(:focus-visible) > *, .common-btn:first-child:hover > * {
+	color: var(--btn-color);
+}
+.common-btn:hover, .common-btn:first-child:active, .common-btn:active, .common-btn:focus, :not(.btn-check)+.common-btn:active, .common-btn:focus-visible, button.common-btn:focus:not(:focus-visible), .common-btn:first-child:hover {
+	border: none;
+	--border-btn: rgba(var(--second-color), 0);
+	--bg-btn: rgba(var(--second-color), 1);
+	--btn-color: rgba(var(--white-color), 1);
+	background: var(--bg-btn);
+	border-color: var(--border-btn);
+	color: var(--btn-color);
+}
+.common-btn::after {
+	content: '';
+	position: absolute;
+	right: -20px;
+	top: 0px;
+	bottom: 0px;
+	background: rgba(var(--main-color), 1);
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	transition: var(--common-btn-transition);
+	z-index: 1;
+}
+.common-btn:hover::after, .common-btn:first-child:active::after, .common-btn:active::after, .common-btn:focus::after, :not(.btn-check)+.common-btn:active::after, .common-btn:focus-visible::after, button.common-btn:focus:not(:focus-visible)::after, .common-btn:first-child:hover::after {
+	width: calc(100% + 50px);
+	right: -30px;
+	border-radius: 5px;
+}
+.common-btn i {
+	position: relative;
+	left: -6px;
+	opacity: 0;
+}
+.common-btn:hover i, .common-btn:first-child:active i, .common-btn:active i, .common-btn:focus i, :not(.btn-check)+.common-btn:active i, .common-btn:focus-visible i, button.common-btn:focus:not(:focus-visible) i, .common-btn:first-child:hover i {
+	left: 0px;
+	opacity: 1;
+}
+
+/* All type btn end */
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+	--ehw-owl-btn: 30px;
+	width: calc(var(--ehw-owl-btn));
+	height: calc(var(--ehw-owl-btn));
+	transition: var(--transition-05s);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(var(--main-color), 0);
+	font-size: 16px;
+	color: rgba(var(--black-color), 1);
+	border: 1px solid rgba(var(--black-color), 0);
+	border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
+	color: rgba(var(--main-color), 1);
+}
+.owl-carousel .owl-nav button.owl-prev.disabled, .owl-carousel .owl-nav button.owl-next.disabled {
+	color: rgba(var(--main-color), 0.5);
+	cursor: default;
+}
+.owl-carousel .owl-dots {
+    display: flex;
+    gap: 10px;
+}
+.owl-carousel button.owl-dot {
+    width: 16px;
+    height: 2px;
+    background: rgba(var(--white-color), 0.6);
+    border-radius: 0px;
+	transition: var(--transition-05s);
+}
+.owl-carousel button.owl-dot.active {
+	background: rgba(var(--white-color), 1);
+    width: 24px;
+}
+
+/* contact start */
+
+.form-box {
+	margin-bottom: 15px;
+}
+.form-box:last-child {
+	margin-bottom: 0px;
+}
+.select-box select, .select-box select:hover, .select-box select:focus, .select-box select:focus-visible, .select-box select:focus-within, .select-box select:active, .select-box select:target {
+	padding-right: 40px;
+	background: rgba(var(--black-color), 0);
+	position: relative;
+	z-index: 1;
+	color: rgba(var(--black-color), 0.8);
+}
+.select-box select option, .select-box select:hover option, .select-box select:focus option, .select-box select:focus-visible option, .select-box select:focus-within option, .select-box select:active option, .select-box select:target option {
+	color: #111;
+}
+.select-box::after, .select-box::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	font-family: var(--font-awesome);
+}
+.select-box::after {
+	content: "\f0d7";
+	font-weight: 600;
+	/* border-right: 2px solid #333; */
+	/* border-bottom: 2px solid #333; */
+	width: 10px;
+	height: 10px;
+	/* transform: rotate(45deg); */
+	right: 20px;
+	top: 28%;
+}
+.select-box::before {
+	border-right: 1px solid rgba(var(--black-color), 0);
+	width: 1px;
+	height: 70%;
+	margin-block: auto;
+	right: 49px;
+	top: 0;
+	bottom: 0;
+}
+.form-control, .form-select {
+	padding: 10px 5px;
+	font-size: 14px;
+	min-height: 40px;
+	border: none;
+	font-weight: 500;
+}
+.form-select {
+	padding-right: 27px;
+}
+.form-control:hover, .form-control:focus, .form-select:hover, .form-select:focus {
+	border-color: rgba(var(--white-color), 1);
+}
+.select-box, .form-control, .select-box:hover, .form-control:hover, .select-box:focus, .form-control:focus {
+	position: relative;
+	background: rgba(var(--white-color), 1);
+	color: rgba(var(--black-color), 1);
+	border: none;
+	border-radius: 0px;
+	border-bottom: 1px solid rgba(var(--black-color), 0.5);
+}
+.form-control::placeholder, .form-select::placeholder, .select-box select, .select-box select:hover, .select-box select:focus {
+	color: rgba(var(--black-color), 0.8);
+}
+.select-box select, .select-box select:hover, .select-box select:focus {
+	border: none;
+}
+textarea.form-control {
+	resize: none;
+}
+
+/* contact */
+
+.form-box > [for="AttachFiles"] {
+	width: 100%;
+}
+.form-box > [for="AttachFiles"] span:first-child {
+	position: absolute;
+	z-index: 1;
+	background: #deefff;
+	height: 37px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 101px;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 0px;
+	cursor: pointer;
+}
+.form-btn {
+	text-align: center;
+}
+.form-btn .common-btn {
+	padding: 14px 50px;
+	text-transform: uppercase;
+	font-size: 15px;
+	--boco-btn: rgba(var(--third-color), 1);
+	--bg-btn: rgba(var(--third-color), 0);
+	--common-btn-color: rgba(var(--third-color), 1);
+}
+.form-btn .common-btn:hover, .form-btn .common-btn:first-child:active, .form-btn .common-btn:active, .form-btn .common-btn:focus, .form-btn :not(.btn-check) + .common-btn:active, .form-btn .common-btn:focus-visible, .form-btn button.common-btn:focus:not(:focus-visible), .form-btn .common-btn:first-child:hover {
+	--boco-btn: rgba(var(--third-color), 1);
+	--bg-btn: rgba(var(--third-color), 1);
+	--common-btn-color: rgba(var(--white-color), 1);
+}
+.cta-form-box {
+	margin-top: 30px;
+}
+
+/* contact end */
+
+@media (max-width: 1200px) {
+	
+}
+
+@media (max-width: 991px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 580px) {
+
+}
