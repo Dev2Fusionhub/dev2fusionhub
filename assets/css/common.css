@@ -243,7 +243,7 @@ body {
 }
 .owl-carousel .owl-dots {
     display: flex;
-    gap: 10px;
+	gap: 4px;
 }
 .owl-carousel button.owl-dot {
 	--ehw-ocbd: 14px;
@@ -252,9 +252,17 @@ body {
     background: rgba(var(--black-color), 0.15);
     border-radius: 0px;
 	transition: var(--transition-05s);
+
+	background: rgba(var(--main-color), 0.5);
+    border-radius: 50%;
+    border: 2px solid rgba(var(--main-color), 0);
+    transform: scale(0.7);
 }
 .owl-carousel button.owl-dot.active {
 	background: rgba(var(--main-color), 1);
+	background: rgba(var(--white-color), 1);
+    border-color: rgba(var(--main-color), 1);
+    transform: scale(1);
 }
 
 /* contact start */
