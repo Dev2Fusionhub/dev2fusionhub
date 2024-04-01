@@ -253,7 +253,7 @@ body {
     border-radius: 0px;
 	transition: var(--transition-05s);
 
-	background: rgba(var(--main-color), 0.5);
+	background: rgba(var(--second-color), 0.5);
     border-radius: 50%;
     border: 2px solid rgba(var(--main-color), 0);
     transform: scale(0.7);
@@ -261,7 +261,7 @@ body {
 .owl-carousel button.owl-dot.active {
 	background: rgba(var(--main-color), 1);
 	background: rgba(var(--white-color), 1);
-    border-color: rgba(var(--main-color), 1);
+    border-color: rgba(var(--second-color), 1);
     transform: scale(1);
 }
 
