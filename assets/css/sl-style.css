@@ -30,11 +30,12 @@
     background: rgba(var(--main-color), 1);
 }
 .quote-img {
+    --ehw-qim: 50px;
     position: absolute;
     top: 15%;
     right: 5%;
-    width: 50px;
-    height: 50px;
+    width: var(--ehw-qim);
+    height: var(--ehw-qim);
 }
 .quote-img img {
     width: 100%;
@@ -47,13 +48,12 @@
     gap: 15px;
 }
 .cf-img {
-    width: 100px;
-    height: 100px;
+    --ehw-cf: 100px;
+    width: var(--ehw-cf);
+    height: var(--ehw-cf);
 }
-.cf-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.cf-name {
+    text-align: left;
 }
 .cf-name h3 {
     margin-bottom: 0px;
@@ -68,18 +68,19 @@
     font-weight: 400;
 }
 .cf-footer {
-    padding: 20px 0px;
+    padding: 20px 0px 0px;
 }
 .cf-footer p {
     font-size: 16px;
     font-weight: 400;
     color: rgba(var(--white-color), 0.5);
     line-height: 1.5;
+    margin-bottom: 0px;
 }
 .cf-slider.owl-carousel .owl-dots {
-    position: absolute;
-    bottom: -10%;
-    left: 48%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 /*********************************** Featured Projects Section **********************/
@@ -90,6 +91,9 @@
     border-radius: 15px;
     overflow: hidden;
 }
+/* .flip-box-front, .flip-box-back {
+    
+} */
 .flip-box-front {
     position: absolute;
     inset: 0%;
@@ -106,6 +110,7 @@
     min-height: 100%;
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
     transition: var(--transition-08s);
 }
 .flip-box-back {
@@ -130,6 +135,7 @@
     opacity: 0;
     visibility: hidden;
     transition: var(--transition-08s);
+    overflow: hidden;
 }
 .flip-box:hover .flip-box-back {
     transform: rotateY(0deg);
@@ -396,7 +402,7 @@
     overflow: hidden;
     /* position: relative; */
 }
-.about-imgOne::before {
+.about-MainImg::before {
     content: '';
     position: absolute;
     top: -5%;

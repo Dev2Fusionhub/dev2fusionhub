@@ -30,23 +30,23 @@ jQuery('#CSDrop').raindrops({
 
 
 $('.cf-slider').owlCarousel({
-    loop:true,
-    margin:20,
-    nav:false,
+    loop: true,
+    margin: 20,
+    nav: false,
     dot: true,
-    navText: [
-        '<i class="fa-solid fa-angle-left"></i>',
-        '<i class="fa-solid fa-angle-right"></i>',
-    ],
+    navText: ['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
     responsive:{
         0:{
-            items: 1
+            items: 1,
         },
-        600:{
-            items: 2
+        767:{
+            items: 1,
         },
-        1000:{
-            items: 2
+        992:{
+            items: 1,
+        },
+        1200:{
+            items: 2,
         }
     }
 });

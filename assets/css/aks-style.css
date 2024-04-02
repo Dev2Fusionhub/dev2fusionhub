@@ -48,7 +48,7 @@ nav .navbar-brand img {
     border: none;
 }
 .navbar-toggler .navbar-toggler-icon {
-    background: rgba(var(--black-color), 1);
+    background: rgba(var(--white-color), 1);
     width: 1.1em;
     height: 2px;
     position: relative;
@@ -248,7 +248,7 @@ nav .navbar-brand img {
 
 /* WorkFlow start */
 
-.common-section.How2Work-section, .common-section.about-section {
+.common-section.service-section, .common-section.sl-fp-section {
     background: rgba(var(--black-color), 0.04);
 }
 .common-section.How2Work-section::after {
@@ -702,7 +702,6 @@ nav .navbar-brand img {
     border-top: 1px dashed rgba(var(--white-color), 0.2);
 }
 .copy-text {
-    font-family: var(--rajdhani-font);
     color: #7E7E7E;
     color: rgba(var(--white-color), 0.65);
     font-weight: 500;
