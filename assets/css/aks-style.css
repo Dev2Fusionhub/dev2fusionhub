@@ -1,6 +1,6 @@
 .MainHeader {
 	position: relative;
-	background: rgba(var(--main-color), 1);
+	background: rgba(var(--white-color), 1);
 	top: 0;
 	z-index: 999;
 	width: 100%;
@@ -13,7 +13,7 @@
 }
 .navbar.header-fixed {
 	position: fixed;
-	background: rgba(var(--main-color), 1);
+	background: rgba(var(--white-color), 1);
 	border: none;
 	animation: slideDown 0.35s ease-out;
 	backdrop-filter: blur(5px);
@@ -28,17 +28,17 @@
 	}
 }
 nav .navbar-brand {
-    height: 130px;
-    /* width: 120px; */
+    /* height: 130px; */
+    width: 200px;
     margin-right: 15px;
-	color: rgba(var(--white-color), 1);
+	color: rgba(var(--black-color), 1);
 	transition: var(--transition-05s);
 	font-size: 30px;
     line-height: 1;
     /* filter: drop-shadow(10px 10px 20px rgba(var(--second-color), 0.8)) drop-shadow(-10px -10px 20px rgba(var(--second-color), 0.8)); */
 }
 nav .navbar-brand:hover, nav .navbar-brand:focus, nav .navbar-brand:active, nav .navbar-brand:visited {
-	color: rgba(var(--white-color), 1);
+	color: rgba(var(--main-color), 1);
 }
 nav .navbar-brand img {
 	object-fit: contain;
@@ -48,7 +48,7 @@ nav .navbar-brand img {
     border: none;
 }
 .navbar-toggler .navbar-toggler-icon {
-    background: rgba(var(--white-color), 1);
+    background: rgba(var(--black-color), 1);
     width: 1.1em;
     height: 2px;
     position: relative;
@@ -58,7 +58,7 @@ nav .navbar-brand img {
     margin: 4px 0px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-    color: rgba(var(--white-color), 1);
+    color: rgba(var(--black-color), 1);
 	transition: var(--transition-05s);
     position: relative;
     text-transform: capitalize;
