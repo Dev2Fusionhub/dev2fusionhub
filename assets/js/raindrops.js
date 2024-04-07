@@ -122,5 +122,4 @@ function raindropsAnimationTick(drop) {
     requestAnimationFrame(function () {
         raindropsAnimationTick(drop);
     });
-}
-;
+};

@@ -157,6 +157,10 @@ nav .navbar-brand img {
     position: relative;
 	padding: 60px 0px;
 }
+.banner-section.banner-inner-page .row {
+    justify-content: center;
+    text-align: center;
+}
 .banner-inner-section::before, .banner-inner-section::after {
 	content: "";
 	position: absolute;
@@ -208,6 +212,9 @@ nav .navbar-brand img {
 	margin-bottom: 15px;
 	font-size: 75px;
 	font-weight: 600;
+}
+.banner-section.banner-inner-page .banner-title, .banner-section.banner-inner-page .banner-box h1 {
+	font-size: 60px;
 }
 .banner-para {
     display: -webkit-box;
