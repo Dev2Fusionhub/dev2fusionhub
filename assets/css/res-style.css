@@ -159,6 +159,9 @@
     .inner-footer .row > *:nth-child(2) .footer-box {
         border-right: none;
     }
+    .inr-proj-tab ul.nav.nav-pills {
+        gap: 5px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -221,6 +224,10 @@
         top: 35px;
         --ehw-qim: 40px;
     }    
+    .inr-proj-tab ul.nav.nav-pills {
+        gap: 30px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 580px) {
