@@ -209,6 +209,20 @@
     font-weight: 400;
 }
 
+/******************************** Inner Project Section ********************/
+.inr-proj-tab ul.nav.nav-pills{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.inr-proj-tab ul.nav.nav-pills button.nav-link {
+    background: transparent;
+    color: rgba(var(--black-color), 1);
+}
+.inr-proj-tab ul.nav.nav-pills button.nav-link.active {
+    background: rgba(var(--second-color), 1);
+    color: rgba(var(--white-color), 1);
+}
 /***************************** Technology Section *****************************/
 
 .tech-sideImg {

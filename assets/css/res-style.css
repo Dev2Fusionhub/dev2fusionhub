@@ -271,9 +271,6 @@
     .about-imgTxt {
         margin-top: 10px;
     }
-    /* .about-imgTxt {
-        display: grid;
-    } */
     .about-imgOne {
         width: 90%;
         height: 200px;
@@ -409,4 +406,10 @@
     .quote-img {
         --ehw-qim: 30px;
     }    
+    .inr-proj-tab ul.nav.nav-pills {
+        gap: 10px;
+    }
+    .banner-section.banner-inner-page .banner-title, .banner-section.banner-inner-page .banner-box h1 {
+        font-size: 42px;
+    }
 }
