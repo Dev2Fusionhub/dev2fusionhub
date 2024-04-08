@@ -68,6 +68,9 @@
     .foot-cta {
         width: 100%;
     }
+    .blog-dtl-box .common-box :where(h1, h2, h3, h4, h5, h6), .common-section .blog-dtl-box .common-box > :where(h1, h2, h3, h4, h5, h6) {
+        --ebd-fs: 18px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -162,6 +165,9 @@
     .inr-proj-tab ul.nav.nav-pills {
         gap: 5px;
     }
+    .blog-dtl-box .common-box :where(h1, h2, h3, h4, h5, h6), .common-section .blog-dtl-box .common-box > :where(h1, h2, h3, h4, h5, h6) {
+        --ebd-fs: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -227,6 +233,9 @@
     .inr-proj-tab ul.nav.nav-pills {
         gap: 30px;
         align-items: center;
+    }
+    .blog-dtl-box .common-box :where(h1, h2, h3, h4, h5, h6), .common-section .blog-dtl-box .common-box > :where(h1, h2, h3, h4, h5, h6) {
+        --ebd-fs: 14px;
     }
 }
 
