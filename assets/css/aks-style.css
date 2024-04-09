@@ -899,3 +899,103 @@ nav .navbar-brand img {
 }
 
 /* Blog Dtl end */
+
+
+/* Contact pages start */
+
+/* faq start */
+
+.MissValu-section .common-para, .MissValu-section .common-box > div {
+	margin-bottom: 0px;
+}
+.faq-section .common-box {
+	text-align: center;
+}
+.accordion {
+    margin-top: 20px;
+}
+.accordion-button:focus {
+	box-shadow: none;
+}
+.accordion-header button {
+    font-size: 15px;
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    color: rgba(var(--white-color), 1);
+    background: rgba(var(--main-color), 1);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+	filter: contrast(0) brightness(2);
+}
+.accordion-body {
+	font-size: 14px;
+    color: #5B5B5B;
+}
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 10px !important;
+    border: 1px solid rgba(var(--main-color), 0.5) !important;
+    overflow: hidden;
+}
+
+/* faq End */
+
+.iframe-box {
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+}
+.iframe-box iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont-box {
+	text-align: center;
+	padding: 15px;
+	border: 1px solid rgba(var(--black-color), 0.5);
+	border-radius: 8px;
+	min-height: 190px;
+	min-height: 160px;
+}
+.cont-icon {
+	font-size: 45px;
+	color: rgba(var(--main-color), 1);
+}
+.cont-text h5 {
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(var(--black-color), 1);
+	line-height: 1;
+}
+.cont-text span, .cont-text a {
+	font-size: 14px;
+	line-height: 1;
+	color: rgba(var(--black-color), 1);
+	transition: var(--transition-05s);
+}
+.cont-text > a:hover {
+	color: rgba(var(--main-color), 1);
+}
+.Contact-SocialList {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+.Contact-SocialList li a {
+    color: rgba(var(--black-color), 0.9);
+    font-size: 15px;
+    transition: var(--transition-05s);
+}
+.Contact-SocialList li a:hover, .Contact-SocialList li a:focus, .tp-list li a:hover, .tp-list li a:focus {
+    color: rgba(var(--second-color), 0.95);
+}
+
+/* Contact pages end */
